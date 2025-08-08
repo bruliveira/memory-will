@@ -7,15 +7,16 @@ const StartScreen = ({ onStart, highScores }) => {
       <div className="start-content">
         <div className="title">
           <h1>🏖️ Jogo da Memória 🏖️</h1>
-          <p>Encontre os pares de emojis da praia!</p>
+          <p>Amg, encontre os pares de emojis da praia!</p>
         </div>
 
         <div className="character-preview">
-          <div className="memory-preview">
-            <div className="card-preview">🏖️</div>
-            <div className="card-preview">🌊</div>
-            <div className="card-preview">🐚</div>
-            <div className="card-preview">🦀</div>
+          <div className="photo-preview">
+            <img
+              src="/minha-praia.png"
+              alt="Minha foto de praia"
+              className="beach-photo"
+            />
           </div>
         </div>
 
@@ -27,7 +28,7 @@ const StartScreen = ({ onStart, highScores }) => {
 
         {Object.values(highScores).some((score) => score > 0) && (
           <div className="high-scores">
-            <h3>🏆 Suas melhores Pontuações:</h3>
+            <h3>🏆 Suas melhores Pontuações amgg:</h3>
             <div className="scores-grid">
               {[2, 4, 6, 8, 10].map((diff) => (
                 <div key={diff} className="score-item">

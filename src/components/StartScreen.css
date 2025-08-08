@@ -61,40 +61,28 @@
   justify-content: center;
 }
 
-.memory-preview {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 15px;
-  max-width: 200px;
-}
-
-.card-preview {
-  width: 60px;
-  height: 60px;
-  background: linear-gradient(135deg, #87ceeb, #98d8e8);
-  border-radius: 15px;
+.photo-preview {
   display: flex;
-  align-items: center;
   justify-content: center;
-  font-size: 1.5rem;
-  border: 3px solid #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  animation: card-bounce 2s infinite;
+  align-items: center;
 }
 
-.card-preview:nth-child(2) {
-  animation-delay: 0.5s;
+.beach-photo {
+  width: 250px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 20px;
+  border: 4px solid #fff;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  animation: photo-float 3s ease-in-out infinite;
+  transition: transform 0.3s ease;
 }
 
-.card-preview:nth-child(3) {
-  animation-delay: 1s;
+.beach-photo:hover {
+  transform: scale(1.05);
 }
 
-.card-preview:nth-child(4) {
-  animation-delay: 1.5s;
-}
-
-@keyframes card-bounce {
+@keyframes photo-float {
   0%,
   100% {
     transform: translateY(0px);
@@ -213,15 +201,9 @@
     font-size: 2.5rem;
   }
 
-  .memory-preview {
-    max-width: 150px;
-    gap: 10px;
-  }
-
-  .card-preview {
-    width: 50px;
-    height: 50px;
-    font-size: 1.2rem;
+  .beach-photo {
+    width: 200px;
+    height: 160px;
   }
 
   .scores-grid {
@@ -238,15 +220,9 @@
     font-size: 2rem;
   }
 
-  .memory-preview {
-    max-width: 120px;
-    gap: 8px;
-  }
-
-  .card-preview {
-    width: 40px;
-    height: 40px;
-    font-size: 1rem;
+  .beach-photo {
+    width: 180px;
+    height: 140px;
   }
 
   .scores-grid {
