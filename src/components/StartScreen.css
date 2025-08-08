@@ -1,12 +1,11 @@
 .start-screen {
   width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  min-height: 100vh;
+  display: block;
   background: linear-gradient(135deg, #87ceeb 0%, #98d8e8 100%);
   position: relative;
-  overflow: hidden;
+  padding: 20px 10px;
+  box-sizing: border-box;
 }
 
 .start-screen::before {
@@ -39,6 +38,8 @@
   backdrop-filter: blur(10px);
   max-width: 500px;
   width: 90%;
+  margin: 20px auto;
+  position: relative;
 }
 
 .title h1 {
